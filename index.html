@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>using bootsrap 5 for a website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!-- Nav-bar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Goodlife</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Destination">Destination</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Carousle -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imgs/lighthouse.jpg" class="d-block w-100" alt="lighthouse">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/valley.jpg" class="d-block w-100" alt="valley">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/mountain.jpg" class="d-block w-100" alt="mountain">
+          </div>
+          <div class="carousel-item">
+            <img src="imgs/falls.jpg" class="d-block w-100" alt="falls">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Main container -->
+      <div class="container">
+        <h1 class="text-center p-5 mb-5 mt-5">Tour Nigeria Today</h1>
+
+        <div class="w-100 bg-secondary text-light p-5 mb-5">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quidem a fuga explicabo nobis ipsum eaque nemo ad possimus id? Sequi, saepe, a possimus mollitia porro dolor deserunt ea sed, reiciendis magnam odio quae. Iusto tempore doloremque dignissimos fugit cumque, voluptatibus, facere earum vel sed explicabo vero sapiente quibusdam expedita?</p>
+          <button type="button" class="btn btn-primary btn-lg">Book Your Trip Now</button>
+        </div>
+        
+        <h2 id="Destination" class="fs-1 text-center p-5 mb-5 mt-5">Popular Destination</h2>
+        <div class="row">
+          <div class="col">
+            <!-- card 1 -->
+            <div class="card">
+              <img src="imgs/mountain.jpg" class="card-img-top" alt="mountain">
+              <div class="card-body">
+                <h5 class="card-title">banff</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reiciendis dolor aspernatur modi illum, quasi vitae officiis possimus, architecto enim aliquam unde atque eius, nemo omnis repudiandae repellat sint illo.</p>
+                <a href="#" class="btn btn-primary">read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <!-- card 2 -->
+            <div class="card">
+              <img src="imgs/lighthouse.jpg" class="card-img-top" alt="lighthouse">
+              <div class="card-body">
+                <h5 class="card-title">peggy</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reiciendis dolor aspernatur modi illum, quasi vitae officiis possimus, architecto enim aliquam unde atque eius, nemo omnis repudiandae repellat sint illo.</p>
+                <a href="#" class="btn btn-primary">read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <!-- card 3 -->
+            <div class="card">
+              <img src="imgs/falls.jpg" class="card-img-top" alt="falls">
+              <div class="card-body">
+                <h5 class="card-title">falls</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reiciendis dolor aspernatur modi illum, quasi vitae officiis possimus, architecto enim aliquam unde atque eius, nemo omnis repudiandae repellat sint illo.</p>
+                <a href="#" class="btn btn-primary">read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- About section -->
+        <h2 id="About" class="fs-1 text-center p-5 mb-5 mt-5">About</h2>
+        <div class="row">
+          <div class="col-6">
+            <div class="bg-dark text-light p-5 mb-5 mt-5">
+              <h2>Rates</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam iusto sit eos error reprehenderit iure laudantium quos,
+                 sint tempore delectus fuga quod molestias? Ullam quibusdam facere doloremque, praesentium autem pariatur?</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="bg-secondary text-light p-5 mb-5 mt-5">
+              <h2>Fees</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam iusto sit eos error reprehenderit iure laudantium quos,
+                 sint tempore delectus fuga quod molestias? Ullam quibusdam facere doloremque, praesentium autem pariatur?</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="bg-secondary text-light p-5 mb-5 mt-5">
+              <h2>Popular Sites</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam iusto sit eos error reprehenderit iure laudantium quos,
+                 sint tempore delectus fuga quod molestias? Ullam quibusdam facere doloremque, praesentium autem pariatur?</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="bg-dark text-light p-5 mb-5 mt-5">
+              <h2>Features</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam iusto sit eos error reprehenderit iure laudantium quos,
+                 sint tempore delectus fuga quod molestias? Ullam quibusdam facere doloremque, praesentium autem pariatur?</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact section -->
+        <h2 id="contact" class="fs-1 text-center p-5 mb-5 mt-5">Contact Us</h2>
+        <div class="w-100 bg-secondary text-light p-5 mb-5">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere quidem a fuga explicabo nobis ipsum eaque nemo ad possimus id? Sequi, saepe, a possimus mollitia porro dolor deserunt ea sed, reiciendis magnam odio quae. Iusto tempore doloremque dignissimos fugit cumque, voluptatibus, facere earum vel sed explicabo vero sapiente quibusdam expedita?</p>
+          <button type="button" class="btn btn-primary btn-lg"><a href="abc@gmail.com" class="text-light text-decoration-none">Contact Us For More Info</a></button>
+        </div>
+
+        <h2 id="contact" class="fs-1 text-center p-5 mb-3 mt-5">Relax Here In Nigeria</h2>
+        <img src="imgs/vacation.jpeg" alt="vacation" class="w-100 mb-5 ps-5">
+
+      </div>
+
+      <footer class="bg-dark text-center text-light p-5">
+        <P>&copy;Tour Nigeria Today</P>
+        <p><a href="abc@gmail.com" class="text-light text-decoration-none">Email Us</a></p>
+      </footer>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
